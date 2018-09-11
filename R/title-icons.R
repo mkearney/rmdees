@@ -8,6 +8,8 @@
 #' @return String of html code.
 #' @export
 title_icons <- function(twitter = NULL, github = NULL) {
+	twitter <- find_twitter(twitter)
+	github <- find_github(github)
   tw1 <- ""
   tw2 <- ""
   gh1 <- ""

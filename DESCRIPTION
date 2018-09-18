@@ -13,6 +13,6 @@ Encoding: UTF-8
 LazyData: true
 Imports: 
     tfse
-RoxygenNote: 6.1.0
+RoxygenNote: 6.1.0.9000
 URL: https://github.com/mkearney/rmdees
 BugReports: https://github.com/mkearney/rmdees/issues

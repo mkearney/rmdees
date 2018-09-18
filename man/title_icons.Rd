@@ -2,9 +2,12 @@
 % Please edit documentation in R/title-icons.R
 \name{title_icons}
 \alias{title_icons}
+\alias{title_icons_fa5}
 \title{Generate text for title icons}
 \usage{
 title_icons(twitter = NULL, github = NULL)
+
+title_icons_fa5(twitter = NULL, github = NULL)
 }
 \arguments{
 \item{twitter}{Screen name}

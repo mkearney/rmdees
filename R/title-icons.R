@@ -17,18 +17,18 @@ title_icons <- function(twitter = NULL, github = NULL) {
   if (!is.null(twitter)) {
     tw1 <- tfse::psub('<th style=\"padding-right:75px!important\">
       <a href=\"https://twitter.com/{twitter}\"> <i class=\"fa fa-twitter\"></i> </a></th>',
-    	twitter)
+    	twitter = twitter)
     tw2 <- tfse::psub('<th style=\"padding-right:75px!important\">
       <a href=\"https://twitter.com/{twitter}\"> @{twitter} </a></th>',
-    	twitter, twitter)
+    	twitter = twitter, twitter = twitter)
   }
   if (!is.null(github)) {
     gh1 <- tfse::psub('<th style=\"padding-left:75px!important\">
       <a href=\"https://github.com/{github}\"> <i class=\"fa fa-github\"></i> </a></th>',
-    	github)
+    	github = github)
     gh2 <- tfse::psub('<th style=\"padding-left:75px!important\">
       <a href=\"https://github.com/{github}\"> @{github} </a></th>',
-    	github, github)
+    	github = github, github = github)
   }
   if (!is.null(tw1) | !is.null(gh1)) {
     tr1 <- paste0('<tr>', tw1, gh1, '</tr>')
